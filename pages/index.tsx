@@ -8,9 +8,9 @@ const Home: NextPage = () => {       // app starts from here.
   const [latestBlocksGroup, setLatestBlocksGroup] = useState<number>();
   return (
     <>
-      <Hero />     // displays search box and title.
-      <SummaryBlocks setLatestBlocksGroup={setLatestBlocksGroup} />    // middle UI section fetches data & displays it
-      <LatestData latestBlocksGroup={latestBlocksGroup} /> .   // latest blocks and transactions component also fetches data 
+      <Hero />    
+      <SummaryBlocks setLatestBlocksGroup={setLatestBlocksGroup} />  
+      <LatestData latestBlocksGroup={latestBlocksGroup} /> 
     </>
   );
 };

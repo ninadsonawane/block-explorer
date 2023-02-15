@@ -4,13 +4,13 @@ import type { NextPage } from 'next';
 import LatestData from '@components/Home/LatestData';
 import { useState } from 'react';
 
-const Home: NextPage = () => {
+const Home: NextPage = () => {       // app starts from here.
   const [latestBlocksGroup, setLatestBlocksGroup] = useState<number>();
   return (
     <>
-      <Hero />
-      <SummaryBlocks setLatestBlocksGroup={setLatestBlocksGroup} />
-      <LatestData latestBlocksGroup={latestBlocksGroup} />
+      <Hero />     // displays search box and title.
+      <SummaryBlocks setLatestBlocksGroup={setLatestBlocksGroup} />    // middle UI section fetches data & displays it
+      <LatestData latestBlocksGroup={latestBlocksGroup} /> .   // latest blocks and transactions component also fetches data 
     </>
   );
 };
